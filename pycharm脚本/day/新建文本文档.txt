@@ -1,0 +1,4 @@
+1，man，jack，22
+2，man，mark，23
+3，woman，jean，20
+4，woman，mary，18
