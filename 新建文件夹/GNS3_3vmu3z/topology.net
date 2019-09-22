@@ -1,0 +1,103 @@
+autostart = False
+version = 0.8.6
+[127.0.0.1:7202]
+    workingdir = c:\users\wn\appdata\local\temp\GNS3_3vmu3z\working
+    udp = 10201
+    [[7200]]
+        image = D:\GNS3\GNS3-0.8.6-all-in-one&IOSjinxiang\cisco_ios\C7200.BIN
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        slot0 = C7200-IO-FE
+        f0/0 = R1 f0/2
+        cnfg = configs\R4.cfg
+        x = -10.0
+        y = 115.0
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2108
+        aux = 2508
+        cnfg = configs\R6.cfg
+        x = -1.0
+        y = -233.0
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = c:\users\wn\appdata\local\temp\GNS3_3vmu3z\working
+    udp = 10001
+    [[3640]]
+        image = D:\GNS3\GNS3-0.8.6-all-in-one&IOSjinxiang\cisco_ios\c3640-ik9o3s-mz.124-10.bin
+        idlepc = 0x605c8ad0
+        sparsemem = True
+        ghostios = True
+        chassis = 3640
+    [[ROUTER R1]]
+        model = 3640
+        console = 2101
+        aux = 2501
+        slot0 = NM-16ESW
+        f0/0 = R2 f0/0
+        f0/1 = R3 f0/0
+        f0/2 = R4 f0/0
+        cnfg = configs\R1.cfg
+        x = -226.0
+        y = -64.0
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = c:\users\wn\appdata\local\temp\GNS3_3vmu3z\working
+    udp = 10101
+    [[7200]]
+        image = D:\GNS3\GNS3-0.8.6-all-in-one&IOSjinxiang\cisco_ios\C7200.BIN
+        sparsemem = True
+        ghostios = True
+    [[ROUTER R2]]
+        console = 2102
+        aux = 2502
+        slot0 = C7200-IO-FE
+        f0/0 = R1 f0/0
+        cnfg = configs\R2.cfg
+        x = -415.0
+        y = -247.0
+        z = 1.0
+    [[ROUTER R3]]
+        console = 2103
+        aux = 2503
+        slot0 = C7200-IO-FE
+        f0/0 = R1 f0/1
+        cnfg = configs\R3.cfg
+        x = -415.0
+        y = 106.0
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
+    [[NOTE 1]]
+        text = "f0/0"
+        x = -29.5659179596
+        y = -17.9417240578
+        interface = R4 f0/0
+    [[NOTE 2]]
+        text = "f0/0"
+        x = 65.5493388483
+        y = -1.24952774876
+        interface = R3 f0/0
+    [[NOTE 3]]
+        text = "f0/0"
+        x = 32.5122313913
+        y = 61.9970259117
+        interface = R2 f0/0
+    [[NOTE 4]]
+        text = "f0/2"
+        x = 62.5659179596
+        y = 48.9417240578
+        interface = R1 f0/2
+    [[NOTE 5]]
+        text = "f0/1"
+        x = 0.450661151731
+        y = 45.2495277488
+        interface = R1 f0/1
+    [[NOTE 6]]
+        text = "f0/0"
+        x = 33.4877686087
+        y = -17.9970259117
+        interface = R1 f0/0

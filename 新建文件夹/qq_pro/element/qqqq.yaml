@@ -1,0 +1,10 @@
+---
+l:
+ - com.tencent.mobileqq:id/btn_login     #  登录的id
+ - com.tencent.mobileqq:id/btn_register  #  注册id
+
+k:
+ - com.tencent.mobileqq:id/input    # 账号的父级唯一的id
+ - android.widget.EditText          #账号输入框唯一的class
+ - com.tencent.mobileqq:id/password #密码输入框唯一的id
+ - com.tencent.mobileqq:id/login    #登录按钮唯一的id
